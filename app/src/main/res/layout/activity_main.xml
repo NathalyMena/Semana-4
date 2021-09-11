@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Mi IP"
+        android:textColor="#B6B6B6"
+        app:layout_constraintBottom_toTopOf="@+id/IPText"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/Input4"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#534EE1"
+        android:textColorLink="#40534EE1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/Input3"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Input2"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#534EE1"
+        android:textColorLink="#40534EE1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Input3"
+        app:layout_constraintStart_toEndOf="@+id/Input1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Input1"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#534EE1"
+        android:textColorLink="#40534EE1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Input2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Input3"
+        android:layout_width="65dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="240dp"
+        android:background="@drawable/edittext"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="#534EE1"
+        android:textColorLink="#40534EE1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Input4"
+        app:layout_constraintStart_toEndOf="@+id/Input2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/IPText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="192.000.00.0"
+        android:textColor="#B6B6B6"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/hostBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:backgroundTint="#534EE1"
+        android:text="Buscar Hosts"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pingBtn" />
+
+    <Button
+        android:id="@+id/pingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#534EE1"
+        android:text="Ping"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Input2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
